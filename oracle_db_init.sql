@@ -1,0 +1,8 @@
+-- NOTE: from https://github.com/gvenzl/oci-oracle-xe#initialization-scripts
+ALTER SESSION
+SET CONTAINER = XEPDB1;
+--
+CREATE USER LANDAIMS IDENTIFIED BY landaims QUOTA UNLIMITED ON USERS;
+--
+GRANT DBA TO LANDAIMS;
+-- GRANT ALL PRIVILEGES TO LANDAIMS;
